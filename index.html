@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kyber Encryption PoC</title>
+    </head>
+    <body>
+        <h1>Kyber Encryption PoC</h1>
+        <form action="/submit" method="POST">
+            <label for="user_input">Enter Text:</label>
+            <input type="text" id="user_input" name="user_input" required>
+            <button type="submit">Encrypt</button>
+        </form>
+        {% if result %}
+            <h2>Encrypted Text:</h2>
+            <p>{{ result }}</p>
+        {% endif %}
+    </body>
+</html>

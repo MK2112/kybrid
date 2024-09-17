@@ -1,0 +1,4 @@
+requests
+flask
+pycryptodome
+pqcrypto
